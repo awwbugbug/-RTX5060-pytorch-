@@ -50,7 +50,5 @@ conda list -n pytorch_rt5060 > pytorch_rt5060-conda-list.txt
 ```
 
 注意事项：
-- 我通过 pip 从 PyTorch 官方 cu130 索引安装了 PyTorch（因为 conda 仓库当时未提供 pytorch-cuda=13.0 的包）。pip/conda 混用在某些情形下会导致依赖不一致，若你需要 conda-only 的环境管理，考虑用纯 pip venv 或等待/检查 conda 的官方包。
-- 若你要把这些更改推送到 GitHub（此 repo），请确保你的本地仓库已配置好远程并有推送权限；我已尝试自动提交并推送（见下方 git 输出）。
+- 我通过 pip 从 PyTorch 官方 cu130 索引安装了 PyTorch（因为 conda 仓库当时未提供 pytorch-cuda=13.0 的包）。pip/conda 混用在某些情形下会导致依赖不一致，若需要 conda-only 的环境管理，考虑用纯 pip venv 或等待/检查 conda 的官方包。
 
-如需我把这些文件发布到你指定的 GitHub 仓库（如果当前工作区不是 git 仓库或没有配置远程），请提供仓库 URL 或允许我初始化并设置远程，我可代为推送（需要凭据或已配置的 SSH key）。
